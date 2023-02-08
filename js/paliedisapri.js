@@ -39,7 +39,6 @@ while (userNumber >5){
     userNumber = parseInt(prompt('Ti ho detto massimo 5'));
 }
 
-console.log(userNumber)
 const choiceUser = prompt('Scegli pari o dispari')
 let choice
 if (choiceUser === 'pari') {
@@ -49,10 +48,10 @@ if (choiceUser === 'pari') {
 }
 
 
+const pcNumber = randomNumber ()
+console.log (pcNumber)
 
 
-
-function randomNumber (numberUser){
-    
-
+function randomNumber (){
+    const randomNumber= Math.floor(Math.random()* 5) +1
 }
