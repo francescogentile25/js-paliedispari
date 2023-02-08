@@ -32,14 +32,15 @@
 // Comunichiamo all’utente chi ha vinto. (decidete voi come)
 
 
-const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
+let userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
 // console.log(userNumber)
-
+document.getElementById('userNumber').innerHTML = 'Il tuo numero è ' + userNumber;
 while (userNumber >5){
     userNumber = parseInt(prompt('Ti ho detto massimo 5'));
 }
 
 const choiceUser = prompt('Scegli pari o dispari')
+document.getElementById('choiceUser').innerHTML = 'Hai scelto ' + choiceUser;
 let choice
 if (choiceUser === 'pari') {
     choice = 0;
@@ -49,12 +50,16 @@ if (choiceUser === 'pari') {
 
 
 const pcNumber = computerChoice()
+document.getElementById('pcNumber').innerHTML = 'Il numero del pc è ' + pcNumber;
 const somma = sum (userNumber, pcNumber)
+document.getElementById('sum').innerHTML = 'La vostra somma è ' + somma;
 
 if (isEven(somma) === choice) {
     console.log('Hai vinto!');
+    // document.getElementById('result').innerHTML = 'Hai vinto';
 } else {
-    console.log('Hai perso.');
+    document.getElementById('result').innerHTML = 'Hai perso';
+    // console.log('Hai perso.');
 }
 /******
 FUNZIONI
