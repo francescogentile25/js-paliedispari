@@ -33,7 +33,7 @@
 
 
 const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
-console.log(userNumber)
+// console.log(userNumber)
 
 while (userNumber >5){
     userNumber = parseInt(prompt('Ti ho detto massimo 5'));
@@ -48,10 +48,29 @@ if (choiceUser === 'pari') {
 }
 
 
-const pcNumber = randomNumber ()
-console.log (pcNumber)
+const pcNumber = computerChoice()
+const somma = sum (userNumber, pcNumber)
 
-
-function randomNumber (){
-    const randomNumber= Math.floor(Math.random()* 5) +1
+if (isEven(somma) === choice) {
+    console.log('Hai vinto!');
+} else {
+    console.log('Hai perso.');
 }
+/******
+FUNZIONI
+*******/
+// funzione numero random
+function computerChoice() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+
+// funzione somma
+// console.log(somma)
+function sum (num1, num2){
+    return num1+ num2
+}
+//funzione pari 
+function isEven (val){
+    return val % 2 === 0;
+}
+
