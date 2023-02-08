@@ -5,18 +5,18 @@ palindorma(userWord)
 
 
 
-function palindorma (userWord){
-    const splitWord=userWord.split('')
+function palindorma(userWord) {
+    const splitWord = userWord.split('')
     // console.log(splitWord)
-    const splitWordUnit= splitWord.join()
+    const splitWordUnit = splitWord.join()
     // console.log(splitWordUnit)
-    const reverseWord=(splitWord.reverse())
+    const reverseWord = (splitWord.reverse())
     // console.log(reverseWord)
-    const reverseWordUnit= reverseWord.join()
+    const reverseWordUnit = reverseWord.join()
     // console.log(reverseWordUnit)
-    if(splitWordUnit=== reverseWordUnit ){
+    if (splitWordUnit === reverseWordUnit) {
         console.log('La parola è palindroma')
-    }else{
+    } else {
         console.log('La parole non è palindroma')
     }
 
