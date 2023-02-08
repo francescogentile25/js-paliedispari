@@ -47,3 +47,12 @@ if (choiceUser === 'pari') {
 } else if (choiceUser === 'dispari') {
     choice = 1;
 }
+
+
+
+
+
+function randomNumber (numberUser){
+    
+
+}
