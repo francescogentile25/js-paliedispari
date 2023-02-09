@@ -54,12 +54,11 @@ document.getElementById('pcNumber').innerHTML = 'Il numero del pc è ' + pcNumbe
 const somma = sum (userNumber, pcNumber)
 document.getElementById('sum').innerHTML = 'La vostra somma è ' + somma;
 
-if (isEven(somma) === choice) {
-    console.log('Hai vinto!');
-    // document.getElementById('result').innerHTML = 'Hai vinto';
+if (isEven(somma) ===true  && choice===0) {
+    document.getElementById('result').innerHTML = 'Hai vinto';
+    // console.log('Hai vinto');
 } else {
     document.getElementById('result').innerHTML = 'Hai perso';
-    // console.log('Hai perso.');
 }
 /******
 FUNZIONI
@@ -77,5 +76,6 @@ function sum (num1, num2){
 //funzione pari 
 function isEven (val){
     return val % 2 === 0;
+
 }
 
